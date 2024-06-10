@@ -1,4 +1,7 @@
-public class pila_dinamica implements IStack{
+package impl;
+import interfaces.IStack;
+
+public class pila_dinamica implements IStack {
 
     private Nodo primero;
     private int capacidad_maxima;
