@@ -59,4 +59,17 @@ public class cola_dinamica_ciclica implements IQueue {
         }
         return -1;
     }
+
+    public void elementoyalrededor() {
+        if (!isEmpty()) {
+            NodoDoble actual = primero;
+            for (int i = 0; i < contador; i++) {
+                int anterior = actual.anteriorNodo.info;
+                int actualInfo = actual.info;
+                int siguiente = actual.sigNodo.info;
+                System.out.println("Elemento: " + actualInfo + ", Anterior: " + anterior + ", Siguiente: " + siguiente);
+                actual = actual.sigNodo;
+            }
+        }
+    }
 }

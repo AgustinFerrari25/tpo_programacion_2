@@ -8,4 +8,6 @@ public interface IQueue {
     boolean isEmpty();
 
     int first();
+
+    void elementoyalrededor();
 }
