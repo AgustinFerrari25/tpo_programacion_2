@@ -9,5 +9,5 @@ public interface IQueue {
 
     int first();
 
-    void elementoyalrededor();
+    void nodo_sig_anterior();
 }

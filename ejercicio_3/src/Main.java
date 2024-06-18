@@ -9,8 +9,8 @@ public class Main {
             cola.add(i);
         }
 
-        System.out.println("Elementos en la cola y su alrededor:");
-        cola.elementoyalrededor();
+        System.out.println("Elementos en la cola:");
+        cola.nodo_sig_anterior();
 
         System.out.println("Eliminando elementos");
         while (!cola.isEmpty()) {

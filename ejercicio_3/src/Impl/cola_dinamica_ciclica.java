@@ -60,7 +60,7 @@ public class cola_dinamica_ciclica implements IQueue {
         return -1;
     }
 
-    public void elementoyalrededor() {
+    public void nodo_sig_anterior() {
         if (!isEmpty()) {
             NodoDoble actual = primero;
             for (int i = 0; i < contador; i++) {
