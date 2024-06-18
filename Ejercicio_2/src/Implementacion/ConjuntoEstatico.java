@@ -61,4 +61,13 @@ public class ConjuntoEstatico implements Conjunto {
     public int getCantidad() {
         return cant;
     }
+
+
+public void imprimirElementos() {
+    for (int i = 0; i < cant; i++) {
+        System.out.print(elementos[i] + " ");
+    }
+    System.out.println();
+}
+
 }
