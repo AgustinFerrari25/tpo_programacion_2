@@ -32,10 +32,9 @@ public class GrafoAleatorio implements GrafoTDA {
     @Override
     public void eliminarVertice(int v) {
         int ind = buscarIndiceVertice(v);
-        if (ind == -1) { // Verifica si el vértice existe antes de eliminar
+        if (ind == -1) { 
             System.out.println("El vértice " + v + " no se puede eliminar porque no existe en el grafo.");
         } else {
-            // Desplaza la última fila y columna a la posición del vértice eliminado
             for (int i = 0; i < cantNodos; i++) {
                 matriz[i][ind] = matriz[i][cantNodos - 1];
             }
